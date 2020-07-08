@@ -24,7 +24,7 @@
                     </div>
                     
                     <div>
-                        @if(Auth::id() != $user->id)
+                        @if(Auth::id() != $user->id　|| Aurh::id() == $user->id)
                         
                             @if (Auth::user()->is_favorite($micropost->id))
                             
